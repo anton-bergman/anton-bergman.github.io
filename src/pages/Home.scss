@@ -1,0 +1,13 @@
+@import "../utils/_variables.module.scss";
+
+.cardsContainer {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  min-width: 90vw;
+  max-width: 2000px;
+
+  //margin-bottom: 40px;
+}

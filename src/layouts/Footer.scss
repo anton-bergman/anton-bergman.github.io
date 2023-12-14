@@ -1,0 +1,107 @@
+@import "../utils/_variables.module.scss";
+
+:root {
+  --footerPadding: 3vw;
+}
+
+.footerContainer {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+
+  font-family: $bodyFont;
+  color: $textColor-primery;
+  font-size: 1rem;
+  margin-bottom: 100px;
+
+  @media (max-width: 900px) {
+    flex-direction: column;
+
+    width: 80%;
+  }
+
+  .leftContainer {
+    padding: var(--footerPadding);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .githubBanner {
+      position: relative;
+      display: flex;
+      width: 35vw;
+      min-width: 210px;
+      padding: 15px;
+      background-color: #f7f2ee;
+      border-radius: 50px;
+
+      li {
+        margin: 1px;
+      }
+
+      .nameContainer {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        margin: 0px 20px;
+        list-style: none;
+
+        .userName {
+          font-size: 0.95rem;
+        }
+
+        .name {
+          font-size: 1rem;
+          font-weight: 600;
+        }
+      }
+
+      @media (max-width: 900px) {
+        width: 100%;
+      }
+    }
+
+    .copyRight {
+      margin-top: var(--footerPadding);
+      font-weight: 500;
+      align-self: flex-start;
+
+      @media (max-width: 900px) {
+        display: none;
+      }
+    }
+  }
+
+  .rightContainer {
+    padding: var(--footerPadding);
+
+    .linkList {
+      list-style: none;
+
+      li {
+        //margin-bottom: calc((var(--footerPadding) / 2));
+        margin-bottom: 20px;
+
+        h3 {
+          font-size: 1.1rem;
+          font-weight: 600;
+        }
+
+        .link {
+          width: fit-content;
+          cursor: pointer;
+          text-decoration: none;
+          color: inherit;
+
+          transition: 0.2s ease-in-out;
+          &:hover {
+            //color: red;
+          }
+        }
+      }
+    }
+  }
+}

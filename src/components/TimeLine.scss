@@ -1,0 +1,14 @@
+@import "../utils/_variables.module.scss";
+
+.timeLineContainer {
+  margin-top: 30px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  @media (max-width: 1000px) {
+    align-items: center;
+    width: 90% !important;
+  }
+}

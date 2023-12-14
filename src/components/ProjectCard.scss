@@ -1,0 +1,120 @@
+@import "../utils/_variables.module.scss";
+
+.container {
+  width: 300px;
+  perspective: 600px;
+  place-items: center;
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+
+    &.isFlipped {
+      transform: rotateY(180deg);
+    }
+
+    .cardFace {
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      color: $textColor-primery;
+
+      width: 100%;
+      border-radius: 15px;
+
+      transition: 0.4s ease-in-out;
+      &:hover {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+        .projectImage {
+          transform: translateY(10px);
+        }
+      }
+
+      // --- Frosted Background --- //
+      // background: rgba(255, 255, 255, 0.2);
+      // box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      // backdrop-filter: blur(5px);
+      // -webkit-backdrop-filter: blur(5px);
+      background-color: #f1ece4;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .cardFront {
+      display: flex;
+      flex-direction: column;
+
+      .projectImageContainer {
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+        //border-radius: 7px;
+
+        overflow: hidden;
+        aspect-ratio: 5/3;
+
+        .projectImage {
+          margin-top: 40px;
+          margin-left: 40px;
+          border-radius: 7px;
+          transition: 0.4s ease-in-out;
+        }
+      }
+
+      .projectInfo {
+        display: flex;
+        flex-direction: column;
+
+        padding: 20px;
+        gap: 7px;
+      }
+    }
+
+    .cardBack {
+      transform: rotateY(180deg);
+
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+
+      .projectInfoBack {
+        display: flex;
+        flex-direction: column;
+        //border: 2px solid red;
+
+        padding: 20px;
+        padding-bottom: 0;
+        gap: 7px;
+      }
+
+      .githubButton {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 60%;
+
+        font-weight: 600;
+        padding: 10px 20px;
+        border-radius: 1000px;
+        border: none;
+        //background-color: #b7e0ff;
+        cursor: pointer;
+
+        font-size: 20px;
+        margin: 20px;
+
+        transition: background-color 0.2s ease-in-out;
+        &:hover {
+          //background-color: #a6cdf7;
+          //background-color: #8ac78a !important;
+        }
+      }
+    }
+  }
+}

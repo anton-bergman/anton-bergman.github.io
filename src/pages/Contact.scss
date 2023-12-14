@@ -1,0 +1,88 @@
+@import "../utils/_variables.module.scss";
+
+$containerPadding: 10px;
+$containerMargin: 10px;
+
+.formContainer {
+  //width: 650px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: clamp(450px, 50vw + 3rem, 700px);
+  min-width: 300px;
+
+  margin-bottom: 40px;
+  //border: 2px solid green;
+
+  @media (max-width: 500px) {
+    width: 90% !important;
+  }
+
+  .formFieldContainer {
+    display: flex;
+    flex-direction: column;
+
+    color: $textColor-primery;
+    //border: 2px solid red;
+
+    //margin: $containerMargin;
+    padding: $containerPadding;
+    gap: 5px;
+
+    width: calc(100% - 2 * $containerPadding);
+
+    .titleField {
+      font-family: $bodyFont;
+      font-size: $font-size-body;
+      font-weight: 500;
+      //color: #a0a2a1;
+      color: #757575;
+    }
+
+    .inputField {
+      font-size: $font-size-body;
+      //font-size: 16px;
+
+      padding: 10px 7px;
+      border-radius: 10px;
+      border: 2px solid #dfdfdf;
+      background-color: #efefef;
+      color: #757575;
+
+      transition: border-color 0.2s ease-in-out;
+      font-family: $bodyFont;
+
+      &:focus {
+        outline: none;
+        border-color: #a0a2a1;
+      }
+
+      &.messageField {
+        height: 150px;
+        resize: none;
+      }
+    }
+  }
+
+  .submitButton {
+    padding: 12px 40px;
+    margin-top: 10px;
+    border-radius: 1000px;
+    border: none;
+
+    font-family: $bodyFont;
+    font-weight: 600;
+    font-size: $font-size-body;
+    color: #757575;
+
+    background-color: #efefef;
+    border: 2px solid #dfdfdf;
+
+    transition: background-color 0.2s ease-in-out;
+    &:hover {
+      background-color: #dfdfdf;
+      cursor: pointer;
+    }
+  }
+}

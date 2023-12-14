@@ -1,0 +1,60 @@
+@import "../utils/_variables.module.scss";
+
+.timeLineItem {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  min-width: fit-content;
+
+  //background-color: #9dc0e0;
+  background-color: #b7e0ff;
+
+  gap: clamp(0.1rem, 2vw, 20px);
+
+  font-family: $bodyFont;
+  font-size: $font-size-body;
+  font-weight: 600;
+  //color: $WEBSITE_BACKGROUND_COLOR;
+  color: $textColor-primery;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 500px;
+
+  .jobContainer {
+    margin: 20px 0px 20px 30px;
+
+    .workplace {
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+
+    .jobTitle {
+      font-weight: 400;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+  }
+
+  .workDuration {
+    margin: 20px 30px 20px 0px;
+    text-align: right;
+    white-space: nowrap;
+  }
+
+  @media (max-width: 1000px) {
+    width: 100% !important;
+    margin-right: 0 !important;
+  }
+
+  @media (max-width: 410px) {
+    font-size: 95%;
+    .jobContainer {
+      margin: 15px 0px 15px 20px;
+    }
+
+    .workDuration {
+      margin: 15px 20px 15px 0px;
+    }
+  }
+}

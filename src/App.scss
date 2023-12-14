@@ -1,0 +1,11 @@
+@import "./utils/_variables.module.scss";
+
+.websiteContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*border: 2px solid red;*/
+
+  background-color: $WEBSITE_BACKGROUND_COLOR;
+}
