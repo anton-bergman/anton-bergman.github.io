@@ -1,6 +1,6 @@
 {
   "name": "personal-website-frontend",
-  "homepage": "https://anton-bergman.github.io/",
+  "homepage": "https://anton-bergman.github.io",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
