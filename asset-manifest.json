@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.4aa4bf24.css",
+    "main.js": "/static/js/main.f6a9cb25.js",
+    "static/js/787.72bf1299.chunk.js": "/static/js/787.72bf1299.chunk.js",
+    "static/media/image2_4032x3024.webp": "/static/media/image2_4032x3024.32a190beb2d3f50f600a.webp",
+    "static/media/image8_4032x3024.webp": "/static/media/image8_4032x3024.a9ee9bc606101d0b9804.webp",
+    "static/media/profilePicture.webp": "/static/media/profilePicture.dd80bf7cf2d65b61108c.webp",
+    "static/media/gitTrendApp.webp": "/static/media/gitTrendApp.1d5acc385ce88fde7a67.webp",
+    "static/media/personalWebsiteImage.webp": "/static/media/personalWebsiteImage.f620293b8dff8d661b74.webp",
+    "static/media/interactionalPaymentComponent.webp": "/static/media/interactionalPaymentComponent.c22a434c19dafd00dd13.webp",
+    "static/media/pacman.webp": "/static/media/pacman.f40edccc502c9ff46b55.webp",
+    "static/media/personalkollen.webp": "/static/media/personalkollen.ad390e8facbe27bd62ce.webp",
+    "static/media/ctfImage.webp": "/static/media/ctfImage.36a81e89f4220abab2ff.webp",
+    "static/media/axisLogo.webp": "/static/media/axisLogo.9cf23ea343aa69d530ce.webp",
+    "static/media/personalkollenLogo.webp": "/static/media/personalkollenLogo.da0b41fde2db21eff2a8.webp",
+    "index.html": "/index.html",
+    "main.4aa4bf24.css.map": "/static/css/main.4aa4bf24.css.map",
+    "main.f6a9cb25.js.map": "/static/js/main.f6a9cb25.js.map",
+    "787.72bf1299.chunk.js.map": "/static/js/787.72bf1299.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4aa4bf24.css",
+    "static/js/main.f6a9cb25.js"
+  ]
+}
