@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.4aa4bf24.css",
-    "main.js": "/static/js/main.f6a9cb25.js",
+    "main.css": "/static/css/main.2f9a9d9d.css",
+    "main.js": "/static/js/main.573664ab.js",
     "static/js/787.72bf1299.chunk.js": "/static/js/787.72bf1299.chunk.js",
     "static/media/image2_4032x3024.webp": "/static/media/image2_4032x3024.32a190beb2d3f50f600a.webp",
     "static/media/image8_4032x3024.webp": "/static/media/image8_4032x3024.a9ee9bc606101d0b9804.webp",
@@ -15,12 +15,12 @@
     "static/media/axisLogo.webp": "/static/media/axisLogo.9cf23ea343aa69d530ce.webp",
     "static/media/personalkollenLogo.webp": "/static/media/personalkollenLogo.da0b41fde2db21eff2a8.webp",
     "index.html": "/index.html",
-    "main.4aa4bf24.css.map": "/static/css/main.4aa4bf24.css.map",
-    "main.f6a9cb25.js.map": "/static/js/main.f6a9cb25.js.map",
+    "main.2f9a9d9d.css.map": "/static/css/main.2f9a9d9d.css.map",
+    "main.573664ab.js.map": "/static/js/main.573664ab.js.map",
     "787.72bf1299.chunk.js.map": "/static/js/787.72bf1299.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4aa4bf24.css",
-    "static/js/main.f6a9cb25.js"
+    "static/css/main.2f9a9d9d.css",
+    "static/js/main.573664ab.js"
   ]
 }
