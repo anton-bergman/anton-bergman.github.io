@@ -1,11 +1,11 @@
 import "./TimeLine.scss";
 import TimeLineItem from "./TimeLineItem";
-import { monthDiff } from "../utils/sharedFunctions";
+import { monthDiff, parseDateString } from "../utils/sharedFunctions";
 
 export const CONTENT_WIDTH = "60%";
 
 function TimeLine() {
-  const START_DATE: Date = new Date("AUG 2020");
+  const START_DATE: Date = new Date(parseDateString("AUG 2020"));
   const END_DATE: Date = new Date(); // current date
   const numberOfMonths = monthDiff(START_DATE, END_DATE);
 

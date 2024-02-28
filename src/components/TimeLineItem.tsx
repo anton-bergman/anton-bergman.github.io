@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./TimeLineItem.scss";
-import { monthDiff } from "../utils/sharedFunctions";
+import { monthDiff, parseDateString } from "../utils/sharedFunctions";
 import { CONTENT_WIDTH } from "./TimeLine";
 import styles from "../utils/_variables.module.scss";
 
@@ -20,16 +20,17 @@ function TimeLineItem({
   totalTimeLineMonths,
 }: TimeLineItemProps) {
   const [windowWidth, setWindowWidth] = useState<number>(window.innerWidth);
+
   const containerWidth: number =
     (parseFloat(CONTENT_WIDTH) / 100) * windowWidth;
   const firstItemInTimeLine: boolean =
-    totalTimeLineMonths === monthDiff(new Date(startDate), new Date());
+    totalTimeLineMonths === monthDiff(parseDateString(startDate), new Date());
   const ITEM_PADDING: number = 10;
 
   const itemWidth = (): string => {
     const monthsOfEmployment: number = endDate
-      ? monthDiff(new Date(startDate), new Date(endDate))
-      : monthDiff(new Date(startDate), new Date());
+      ? monthDiff(parseDateString(startDate), parseDateString(endDate))
+      : monthDiff(parseDateString(startDate), new Date());
 
     const percentageOfTotalTimeline: number =
       monthsOfEmployment / totalTimeLineMonths;
@@ -42,7 +43,7 @@ function TimeLineItem({
 
   const rightMargin = (): string => {
     const numOfMonthsAgo = endDate
-      ? monthDiff(new Date(endDate), new Date())
+      ? monthDiff(parseDateString(endDate), new Date())
       : 0;
 
     const percentageOfTotalTimeline: number =
