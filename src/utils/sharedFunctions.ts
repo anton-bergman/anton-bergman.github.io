@@ -18,7 +18,6 @@ export function monthDiff(d1: Date, d2: Date): number {
   months -= d1.getMonth();
   months += d2.getMonth();
 
-  console.log("monthDiff return: ", months <= 0 ? 0 : months);
   return months <= 0 ? 0 : months;
 }
 
