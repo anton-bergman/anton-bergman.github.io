@@ -9,6 +9,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
 
   background-color: $WEBSITE_BACKGROUND_COLOR;
+  display: flex;
+  justify-content: center;
 }
 
 code {

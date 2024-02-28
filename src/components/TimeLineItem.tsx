@@ -57,7 +57,7 @@ function TimeLineItem({
   useEffect(() => {
     const handleResize = () => {
       setWindowWidth(window.innerWidth);
-      console.log(window.innerWidth);
+      //console.log(window.innerWidth);
     };
 
     // Add event listener for window resize

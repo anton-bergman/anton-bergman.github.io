@@ -8,7 +8,7 @@ $font-h1: 8vw;
 //$font-h2: 3.5vw;
 $font-h2: 2.6vw;
 
-$font-size-title: clamp(2rem, 0.5692rem + 8.238vw, 13.75rem);
+$font-size-title: clamp(2rem, 0.5rem + 8vw, 10rem);
 $font-size-subtitle: clamp(1.5rem, 1.0982rem + 1.7143vw, 2.8125rem);
 
 //$font-size-body: 1.2rem;
@@ -17,26 +17,7 @@ $font-size-body: clamp(1rem, 0.9235rem + 0.3265vw, 1.25rem);
 $textColor-primery: #28282b;
 
 $WEBSITE_BACKGROUND_COLOR: #ede7de;
-// $WEBSITE_BACKGROUND_COLOR: linear-gradient(
-//   to bottom,
-//   hsla(36, 31%, 90%, 0) 0%,
-//   hsla(36, 31%, 90%, 0.013) 9.7%,
-//   hsla(36, 31%, 90%, 0.049) 18.1%,
-//   hsla(36, 31%, 90%, 0.104) 25.5%,
-//   hsla(36, 31%, 90%, 0.175) 31.9%,
-//   hsla(36, 31%, 90%, 0.259) 37.7%,
-//   hsla(36, 31%, 90%, 0.352) 43%,
-//   hsla(36, 31%, 90%, 0.45) 47.9%,
-//   hsla(36, 31%, 90%, 0.55) 52.8%,
-//   hsla(36, 31%, 90%, 0.648) 57.7%,
-//   hsla(36, 31%, 90%, 0.741) 63%,
-//   hsla(36, 31%, 90%, 0.825) 68.7%,
-//   hsla(36, 31%, 90%, 0.896) 75%,
-//   hsla(36, 31%, 90%, 0.951) 82.2%,
-//   hsla(36, 31%, 90%, 0.987) 90.5%,
-//   hsl(36, 31%, 90%) 100%
-// );
-$MAX_CONTENT_WIDTH: 2000px; // TODO: Decide this <--
+$MAX_CONTENT_WIDTH: 1600px;
 
 :export {
   textColorPrimery: $textColor-primery;

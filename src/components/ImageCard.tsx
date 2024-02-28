@@ -16,7 +16,10 @@ function ImageCard({
   imageBottomMargin,
 }: ImageCardProps) {
   return (
-    <div className="imageContainer" style={{ width: imageContainerWidth }}>
+    <div
+      className="imageContainer"
+      style={{ width: imageContainerWidth, maxWidth: imageWidth }}
+    >
       <div className="toasterContainer">
         <p className="placeOfImage">{placeOfImage}</p>
       </div>

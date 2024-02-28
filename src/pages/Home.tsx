@@ -13,11 +13,9 @@ import {
 
 const calcIconSize = (cardHeight: string) => {
   const cardHeightNoPX: string = cardHeight.slice(0, -2);
-  const result = 1.6 * parseInt(cardHeightNoPX) - 168;
-  console.log(result);
+  const result = 1.55 * parseInt(cardHeightNoPX) - 168;
 
-  //return 1.6 * parseInt(cardHeightNoPX) - 168;
-  return 1.55 * parseInt(cardHeightNoPX) - 168;
+  return result;
 };
 
 const calcStrokeWidth = (cardHeight: string) => {

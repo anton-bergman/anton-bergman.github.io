@@ -5,6 +5,7 @@ import styles from "../utils/_variables.module.scss";
 import { BACKEND_URL } from "../utils/_variables";
 
 function Footer() {
+  const year: number = new Date().getFullYear();
   const handleResume = () => {
     // Make a GET request to the server to download the PDF resume
     fetch(BACKEND_URL + "/resume", { method: "GET" })
@@ -36,7 +37,7 @@ function Footer() {
             <li className="name">Anton Bergman</li>
           </ul>
         </div>
-        <div className="copyRight">&copy; 2023 Anton Bergman</div>
+        <div className="copyRight">&copy; {year} Anton Bergman</div>
       </div>
       <div className="rightContainer">
         <ul className="linkList">

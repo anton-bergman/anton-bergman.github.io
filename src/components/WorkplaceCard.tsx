@@ -44,7 +44,7 @@ function WorkplaceCard({
 
       if (isVisible) {
         setVisibleCardHeight(cardHeight);
-        console.log("visible card height: " + cardHeight);
+        //console.log("visible card height: " + cardHeight);
       }
     }
   }, [isVisible]);

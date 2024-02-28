@@ -16,10 +16,10 @@ function Header({
 }: HeaderProps) {
   const padding =
     position === "top-page-header"
-      ? "150px"
+      ? "100px"
       : position === "mid-page-header"
       ? "50px"
-      : "150px";
+      : "100px";
 
   const renderDesciption = () => {
     if (description) {

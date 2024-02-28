@@ -25,7 +25,7 @@ function Contact() {
 
   const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setFormData({ ...formData, [event.target.id]: event.target.value });
-    console.log(formData);
+    //console.log(formData);
   };
 
   const handleTextareaChange = (
@@ -37,7 +37,7 @@ function Contact() {
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
-    console.log("formData: " + formData);
+    //console.log("formData: " + formData);
     try {
       const response = await fetch(BACKEND_URL + "/submit-form", {
         method: "POST",
@@ -55,7 +55,7 @@ function Contact() {
         alert("Email sent!");
       }
     } catch (error) {
-      console.log(error);
+      console.error(error);
     }
 
     // Reset the form to empty

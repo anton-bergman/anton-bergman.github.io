@@ -5,7 +5,5 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  /*border: 2px solid red;*/
-
-  background-color: $WEBSITE_BACKGROUND_COLOR;
+  max-width: $MAX_CONTENT_WIDTH;
 }

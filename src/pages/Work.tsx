@@ -89,7 +89,7 @@ function Work() {
           cardColor="#b9e9b9"
           hoverColor="#8ac78a"
           title="Personal website"
-          shortDescription="My personal website, built with React to showcases my software 
+          shortDescription="My personal website, built with React to showcase my software 
           engineering skills and projects."
           longDescription="Developed a personal portfolio website using React, TypeScript, and 
           NodeJS Express. Featuring diverse projects, this platform demonstrates my technical 
