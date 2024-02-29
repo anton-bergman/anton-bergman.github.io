@@ -69,7 +69,7 @@ function Work() {
         logoAspectRatio={800 / 214}
         jobDescription="Collaborated with Personalkollen as a Software Developer, 
         leading the development of a CRM system aimed at enhancing customer service. 
-        Played a key role in designing and implementing solutions, designed to enchange
+        Played a key role in designing and implementing solutions, designed to enhance
         the operational efficiency of customer support within the organization."
         tools={["Javascript", "React", "Python", "Django", "Postgresql"]}
         openByDefault={false}
